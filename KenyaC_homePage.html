@@ -14,20 +14,34 @@
             background-image:url("Pictures/black.jpg");
             z-index: -1;
             position: fixed;
-            color: rgb(253, 0, 29);
+            color:gold;
             text-align: center;
             
         }
     </style>
+    <link rel="stylesheet" href="KenyaC.css">
    
 </head>
 <body>
     <div ><h1>Welcome To Kenya Constructions</h1></div>
-      <form action="Credentials.txt">
+      <div id="About">
+        <div id="table">
+          <table border="1">
+            <tr>
+              <td><h2>Kenya Constructions is a platform for Hiring the Highly
+                 skilled personell for your Construction project as well as the labour 
+                 force conveniently. Kenya Constructions ensures that even the Labour force selected are well versed in the daily tasks required of them. Feel Free to navigate our Website</h2></td>
+            </tr>
+            
+          </table>
+        </div>
+         <br>
+        </div>
+      <form id="Home">
         
-        Enter Email<input type="email" name="in_1" id="email" required><br><br>
-        Enter Password <input type="password" name="in_2" required><br><br>
-        <input type="submit" onclick="Call_file();">
+        Enter Email <input type="email"  id="email" required style="background-color:rgb(89, 136, 41);"><br><br>
+        Enter Password <input type="password" id="passwd" required style="background-color: rgb(34, 181, 210);"><br><br>
+        <input type="button" value="LOG IN" onclick="Call_file();" style="background-color: aqua; text-align: right;">
         
       </form>
 
