@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilled Personell</title>
+    <script lang="Javascript" type="text/Javascript">
+      function call(){
+        res=window.prompt("How would you like us to send the notification?\nEnter 1 for email and 2 for text message","Email")
+        if res==1{
+            res=" an email";
+            }
+            else if(res==2)
+            res="a test";
+            else
+            res=="an email";
+
+            alert("We shall send "+res+" notification")
+            
+      }
+      
+    </script>
+      <style>
+        body{
+            background-image:url("Pictures/black.jpg");
+            z-index: -1;
+            position: fixed;
+            color: rgb(42, 165, 130);
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio</h1>
+<div>
+    <form action="Credentials1.txt">
+        
+        Enter you name <input type="text"><br><br>
+        Enter your ID  number <input type="text" required><br><br>
+        Enter Email <input type="email" ><br><br>
+        Enter Phone number <input type="tel" required><br>
+        <p>Select your skill below:</p>
+            <select name="skill" id="sk" required>
+                <option value="val1">Masonry</option>
+                <option value="val2">Carpentry</option>
+                <option value="val3">Welding</option>
+                <option value="val4">Plumbing</option>
+            </select><br><br>
+
+        <input type="submit" onclick="call();">
+        
+    </form>
+
+</div>
+
+</body>
+</html>
