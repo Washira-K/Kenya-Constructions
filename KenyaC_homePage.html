@@ -8,6 +8,10 @@
     function Call_file(){
       window.open("Page_2.html","Sites","width=800,height=800");
     }
+    function openScope(){
+      window.open("KenyaC_scopeManual.html","scope","height=500,width=500");
+
+    }
     </script>
      <style>
         body{
@@ -16,18 +20,21 @@
             position: fixed;
             color: rgb(253, 0, 29);
             text-align: center;
+
             
         }
     </style>
+    <link rel="stylesheet" href="KenyaC.css">
    
 </head>
 <body>
     <div ><h1>Welcome To Kenya Constructions</h1></div>
+    <h2 style="align-self: self-end;"><input type="button" onclick="openScope();" value="About Us" style="color: red; background-color: rgb(0, 234, 255);"></h2>
       <form action="Credentials.txt">
         
-        Enter Email<input type="email" name="in_1" id="email" required><br><br>
+        Enter Email <input type="email" name="in_1" id="email" required><br><br>
         Enter Password <input type="password" name="in_2" required><br><br>
-        <input type="submit" onclick="Call_file();">
+        <input type="submit" onclick="Call_file();" style="background-color: rgb(0, 242, 255);">
         
       </form>
 
